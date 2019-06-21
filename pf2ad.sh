@@ -10,7 +10,7 @@ if [ -f "/etc/samba.patch.version" ]; then
 fi
 
 # Verifica versao pfSense
-if [ "$(cat /etc/version)" != "2.4.3-RELEASE" ]; then
+if [ "$(cat /etc/version)" != "2.4.4-RELEASE" ]; then
 	echo "ERROR: You need the pfSense version 2.4.3 to apply this script"
 	exit 2
 fi
