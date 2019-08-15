@@ -23,7 +23,7 @@ export ASSUME_ALWAYS_YES
 
 # Lock packages necessary
 /usr/sbin/pkg lock pkg
-/usr/sbin/pkg lock pfSense-2.4.3
+/usr/sbin/pkg lock pfSense-2.4.4
 
 mkdir -p /usr/local/etc/pkg/repos
 
@@ -39,7 +39,7 @@ EOF
 /usr/sbin/pkg install -r pf2ad net/samba44 2> /dev/null
 
 /usr/sbin/pkg unlock pkg
-/usr/sbin/pkg unlock pfSense-2.4.3
+/usr/sbin/pkg unlock pfSense-2.4.4
 
 rm -rf /usr/local/etc/pkg/repos/pf2ad.conf
 /usr/sbin/pkg update
