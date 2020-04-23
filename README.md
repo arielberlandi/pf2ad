@@ -11,6 +11,12 @@ fetch -q -o - https://raw.githubusercontent.com/arielberlandi/pf2ad/2.4.3-SAMBA4
 
 It will upgrade the system package, add a custom repository with samba version with AD support, will if necessary the installation of the dependent packages (Squid), apply changes to the Squid package code and the system menu to add configuration options of AD authentication.
 
+REPO
+
+Unofficial2: { url: "pkg+https://pkg.freebsd.org/FreeBSD:11:amd64/latest/",
+	    mirror_type: "srv",
+	    enabled: yes}
+
 More information:
 
 <http://pf2ad.mundounix.com.br/en/index.html>
