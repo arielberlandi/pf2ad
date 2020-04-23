@@ -66,7 +66,6 @@ if [ ! "$(/usr/sbin/pkg info | grep pfSense-pkg-squid)" ]; then
 fi
 cd /usr/local/pkg
 fetch -o - -q https://openjdtec.com.br/pfsense/2.4.4/samba/squid_winbind_auth.patch | patch -b -p0 -f
-fetch -o /usr/local/pkg -q https://openjdtec.com.br/pfsense/2.4.4/samba/squid.inc
 
 if [ ! -f "/usr/local/etc/smb4.conf" ]; then
 	touch /usr/local/etc/smb4.conf
