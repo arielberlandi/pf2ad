@@ -29,7 +29,7 @@ mkdir -p /usr/local/etc/pkg/repos
 
 cat <<EOF > /usr/local/etc/pkg/repos/pf2ad.conf
 pf2ad: {
-    url: "https://github.com/arielberlandi/packages/raw/master",
+    url: "https://github.com/arielberlandi/packages/raw/11.1",
     mirror_type: "https",
     enabled: yes
 }
