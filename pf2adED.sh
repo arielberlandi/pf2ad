@@ -29,14 +29,14 @@ mkdir -p /usr/local/etc/pkg/repos
 
 cat <<EOF > /usr/local/etc/pkg/repos/pf2ad.conf
 pf2ad: {
-    url: "https://github.com/pf2ad/packages/raw/11.1",
+    url: "https://github.com/arielberlandi/packages/raw/master",
     mirror_type: "https",
     enabled: yes
 }
 EOF
 
 /usr/sbin/pkg update -r pf2ad
-/usr/sbin/pkg install -r pf2ad net/samba44 2> /dev/null
+/usr/sbin/pkg install -r pf2ad net/samba410 2> /dev/null
 
 /usr/sbin/pkg unlock pkg
 /usr/sbin/pkg unlock pfSense-2.4.5
